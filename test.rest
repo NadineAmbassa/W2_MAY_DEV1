@@ -1,0 +1,57 @@
+###
+GET http://127.0.0.1:8000/api/messages/
+
+###
+GET http://127.0.0.1:8000/api/messages/3
+
+###
+GET http://127.0.0.1:8000/api/messages/description/Dans ce
+
+###
+GET http://127.0.0.1:8000/api/messages/titre/lumiere
+
+###
+GET http://127.0.0.1:8000/api/messages/auteur/obama
+
+###
+DELETE http://127.0.0.1:8000/api/messages/123
+
+### 
+PUT http://127.0.0.1:8000/api/messages/99999999999999999
+Content-Type: application/json
+
+ {
+    "_id": "99999999999999999",
+    "titre": "prosperite financiere",
+    "auteur": "nivea@gmail.com",
+    "description": "AAAAAAAAAAAA AAAAAAAAAAAAAAA",
+    "langue": "français",
+    "date": "2022-10-23T04:00:00.000Z",
+    "commentaires": [
+      {
+        "commentaire": "OOOOOOOO OOOOOOO OOOOOO OOOOOO ",
+        "auteur": "jtecroispas@ici.com",
+        "date": "2022-10-25T04:00:00.000Z"
+      }
+    ]
+  }
+
+###
+POST http://127.0.0.1:8000/api/messages
+Content-Type: application/json
+
+   {
+    "_id": "1",
+    "titre": "Comment faire fructifier votre argent sans risques",
+    "auteur": "joseph@trucmachin.com",
+    "description": "Dans ce sujet nous allons discuter des possibilités de faire fructifier votre argent sans prendre de risques",
+    "langue": "français",
+    "date": "2022-10-23T04:00:00.000Z",
+    "commentaires": [
+      {
+        "commentaire": "Tu dis n'importe quoi",
+        "auteur": "jtecroispas@ici.com",
+        "date": "2022-10-25T04:00:00.000Z"
+      }
+    ]
+  }

@@ -1,0 +1,4 @@
+# Auteur: Nadine Ambassa
+# Date: 03 avril 2023
+Description du projet....
+Ce travail est en fait un exercice de mise à jour d’un programme déjà fait, il s’agit donc de faire évoluer un programme utilisant la notion asynchrone de « callback » vers une notion un peu plus récente de promesses. Le travail consiste à reprendre le travail nommé « devoir 01 » que vous avez fait dans le cours de services Web. Celui qui consistait à écrire tous les services Web que nous avons utilisé tout au long du cours. Ce travail utilisait les concepts de callback que vous devrez remplacer par l’utilisation de promesses. En fait, vous devez remplacer la librairie mongoose que nous avions utilisée dans le cours précédent pour faire le travail avec la nouvelle version de cette librairie (tel que nous l’avons fait jusqu’à maintenant dans les laboratoires du cours avec les livres). 

@@ -1,0 +1,16 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Description du projet....\r faire un programme à partir des fichiers et exemples que nous avons fait pendant le cours. Il s’agit d’écrire un programme qui démarre un serveur Web afin de réaliser un API de type REST pour accéder aux données des messages (décrit plus haut) se trouvant dans Atlas. Votre programme doit utiliser le fichier index.js pour se connecter à la base de données Atlas (voir section I ci-dessus) et activer les routes nécessaires afin de servir les URL suivants (ces routes doivent être définies dans un fichier .js se trouvant dans le répertoire « ./routes »):\r -\tGET « /api/messages » pour récupérer tous les messages de la BD (limite à 250 messages)\r -\tGET « /api/messages/:id » pour récupérer le message dont l’identifiant est :id\r -\tGET « /api/messages/description/:texte » pour récupérer tous les messages de la BD (limite à 250 messages) dont la description contient le :texte mentionné (messages triés par date décroissante)\r -\tGET « /api/messages/titre/:texte » pour récupérer tous les messages de la BD (limite à 250 messages) dont le titre contient le :texte mentionné (messages triés par date décroissante)\r -\tGET « /api/messages/auteur/:texte » pour récupérer tous les messages de la BD (limite à 250 messages) dont l`auteur contient le :texte mentionné (messages triés par date décroissante)\r -\tDELETE « /api/messages/:id » pour supprimer le message dont l’identifiant est :id\r -\tPOST « /api/messages/ » pour ajouter le message (le JSON du message contient le champ _id)\r -\tPUT « /api/messages/:id » pour modifier le message\r De plus, votre programme doit définir un schéma de données à l’intérieur d’un fichier message.js se trouvant dans le répertoire « ./modeles ».\r Ajoutez l’extension REST CLIENT dans vsCode et créez un fichier de tests que vous allez nommer test.rest afin de pouvoir tester votre API. Assurez-vous que votre API fonctionne correctement en testant les différentes routes avec des différents paramètres.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index",
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3"
+  }
+}
