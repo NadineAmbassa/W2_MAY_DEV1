@@ -1,4 +1,14 @@
 # Auteur: Nadine Ambassa
 # Date: 03 avril 2023
 Description du projet....
-Ce travail est en fait un exercice de mise à jour d’un programme déjà fait, il s’agit donc de faire évoluer un programme utilisant la notion asynchrone de « callback » vers une notion un peu plus récente de promesses. Le travail consiste à reprendre le travail nommé « devoir 01 » que vous avez fait dans le cours de services Web. Celui qui consistait à écrire tous les services Web que nous avons utilisé tout au long du cours. Ce travail utilisait les concepts de callback que vous devrez remplacer par l’utilisation de promesses. En fait, vous devez remplacer la librairie mongoose que nous avions utilisée dans le cours précédent pour faire le travail avec la nouvelle version de cette librairie (tel que nous l’avons fait jusqu’à maintenant dans les laboratoires du cours avec les livres). 
+Ce projet  est en fait un programme qui démarre un serveur Web afin de réaliser un API de type REST pour accéder aux données des messages (décrit plus haut) se trouvant dans Atlas. Votre programme doit utiliser le fichier index.js pour se connecter à la base de données Atlas (voir section I ci-dessus) et activer les routes nécessaires afin de servir les URL suivants (ces routes doivent être définies dans un fichier .js se trouvant dans le répertoire « ./routes »):
+-	GET « /api/messages » pour récupérer tous les messages de la BD (limite à 250 messages)
+-	GET « /api/messages/:id » pour récupérer le message dont l’identifiant est :id
+-	GET « /api/messages/description/:texte » pour récupérer tous les messages de la BD (limite à 250 messages) dont la description contient le :texte mentionné (messages triés par date décroissante)
+-	GET « /api/messages/titre/:texte » pour récupérer tous les messages de la BD (limite à 250 messages) dont le titre contient le :texte mentionné (messages triés par date décroissante)
+-	GET « /api/messages/auteur/:texte » pour récupérer tous les messages de la BD (limite à 250 messages) dont l`auteur contient le :texte mentionné (messages triés par date décroissante)
+-	DELETE « /api/messages/:id » pour supprimer le message dont l’identifiant est :id
+-	POST « /api/messages/ » pour ajouter le message (le JSON du message contient le champ _id)
+-	PUT « /api/messages/:id » pour modifier le message
+De plus, votre programme doit définir un schéma de données à l’intérieur d’un fichier message.js se trouvant dans le répertoire « ./modeles ».
+ 
